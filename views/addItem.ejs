@@ -1,0 +1,28 @@
+<html>
+<head>
+    <title>examen</title>
+
+    <link rel="stylesheet" href="/css/styleAdd.css"/>
+</head>
+<body>
+    <div id="container">
+        <h1>Ajouter un article</h1>
+        <form action="/addItem" method="POST">
+            <div class="name">
+                <label class="labelForm">Nom :</label>
+                <input class="inputForm" type="text" name="itemName" id="itemName" required><br>
+            </div>
+
+            <div class="quantity">
+                <label class="labelForm">Quantitée :</label>
+                <input class="inputForm" type="text" name="itemQuantity" id="itemQuantity" required><br>
+            </div>
+            
+            <div class="save">
+                <br><button type="submit" name="save" value="save">Enregistrer</button>
+            </div>
+            
+        </form>
+    </div>
+</body>
+</html>

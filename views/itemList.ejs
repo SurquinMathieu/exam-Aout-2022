@@ -1,0 +1,21 @@
+<html>
+<head>
+    <title>examen</title>
+      <link rel="stylesheet" href="/css/styleList.css"/>
+</head>
+<body>
+
+    <div id="container">
+    <h1>Liste des articles à acheter</h1>
+    <% for (let index=0; index<items.length;index++){%>
+    <% if(items[index].purchased ==null){%>
+    <div class="item" id="item"><%= items[index].name %> <%= items[index].quantity %><button class="button" id="delButton" onclick="location.href='/removeItem/<%=items[index].id%>'">Supprimer</button><button class="button" id="strikeButton" onclick="location.href='/strikeThrough/<%=items[index].id%>'">Barrer</button></div>
+    <%} else{%>
+        <div class="item" id="item-strikeThrough"><%= items[index].name %> <%= items[index].quantity %><button class="button" id="delButton" onclick="location.href='/removeItem/<%=items[index].id%>'">Supprimer</button></div>
+    <%}%>
+
+    <%}%>
+    <button class="button" id="addButton" onclick="location.href='/addItem'">Encoder un autre article</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+#item-strikeThrough{
+    text-decoration : line-through;
+}
+
+body{
+    width : 500px;
+    font-family : Arial;
+    font-size : 12px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: lightgrey;
+    padding : 10px;
+}
+
+.button{
+    background-color: steelblue;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px;
+}
+
+.item{
+    text-align: left;
+    background-color: lightblue;
+    margin: 5px;
+    padding: 5px;
+
+
+}
